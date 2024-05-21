@@ -13,7 +13,7 @@ export const fetchPhotos = searchImage => {
     per_page: 21,
   });
 
-  return fetch('${BASE_URL}/?${params}').then(response =>{
+  return fetch(`${BASE_URL}/?${params}`).then(response =>{
     if (!response.ok){
       throw new Error(
         'Sorry, there are no image matching your search query. Please try again!'
@@ -22,3 +22,4 @@ export const fetchPhotos = searchImage => {
     return response.json();
   });
 }
+
