@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css" />
-</head>
+  </head>
+
 <body>
-    <header>
-        <form class="search-form" id="search-form">
-            <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-            <button type="submit">Search</button>
+     <form class="search-form">
+        <div class="">
+            <input type="text" class="search-input" placeholder="Search images..." name="searchKeyword" />
+        </div>
+            <button type="submit" class="search-btn">Search</button>
         </form>
-    </header>
-    <main>
-        <div class="gallery" id="gallery"></div>
-    </main>
-    <script src="main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.js"></script>
-</body>
+
+    <ul class="gallery"></ul>
+    <span class="loader position is-hidden"></span>
+    <script type ="module" src="main.js"></script>
+    </body>
 </html>
